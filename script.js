@@ -74,9 +74,6 @@ console.log(d);
 
 
 // spread means all the element values are copied
-// spread use hota hai copy ya fur uss location par kisi aur values ko bikherne ke liye
-
-//  rest use hota hai jab aapko bache hue values ek variable mein daalne ho
 
 function abcde(a,b,c,...d){ // here it is used as rest operation
     console.log(a,b,c, d);
@@ -194,12 +191,12 @@ p4.then(function(data){
 
 //  Async Await
 
-// in any async fucntion where we are suing the "then" , we can use Promises, but in the ans we have to use the "then" keyword . BUT WE CAN AVOID THE "THEN" keyword by using the ASYNC AWAIT
+// in any async function where we are using the "then", we can use Promises, but in the async we have to use the "then" keyword. BUT WE CAN AVOID THE "THEN" keyword by using the ASYNC AWAIT
 
 // earklier practice
  function abcdef(){
 
-    fetch(`https://randomuser.me/api/`)// this line will fetch the api details but in the raw format i have to convert it
+    fetch(`https://randomuser.me/api/`)// this line will fetch the api details, but in the raw format, I have to convert it
 
     .then(function(raw){
         return raw.json();
